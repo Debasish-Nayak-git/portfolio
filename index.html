@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debasish Nayak | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">RS.</div>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Debasish Nayak</span></h1>
+      <p class="role">Full Stack Developer, Devops · MERN Stack</p>
+      <p class="desc">
+        I build clean web applications. Currently pursuing B.Tech CSE
+        and passionate about turning ideas into real products.Also i have ambision
+        on ai,ml and devops.
+      </p>
+      <div class="btn-group">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <p class="section-label">What I Know</p>
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag">CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">React.js</span>
+      <span class="skill-tag">Node.js</span>
+      <span class="skill-tag">Express.js</span>
+      <span class="skill-tag">MongoDB</span>
+      <span class="skill-tag">Git & GitHub</span>
+      <span class="skill-tag">REST APIs</span>
+      <span class="skill-tag">Tailwind CSS</span>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <p class="section-label">My Work</p>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <div class="card">
+        <h3>📚 Student Manager App</h3>
+        <p>CRUD app to manage student records. Add, edit, delete and search students with a React frontend and Express + MongoDB backend.</p>
+        <div class="card-tags">
+          <span class="tag">React</span>
+          <span class="tag">Express</span>
+          <span class="tag">MongoDB</span>
+        </div>
+        <div class="card-links">
+          <a href="#">⭐ GitHub</a>
+          <a href="#">🔗 Live Demo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🛒 E-Commerce Site</h3>
+        <p>Responsive shopping website with product listing and cart functionality. Fully responsive with mobile support.</p>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+        </div>
+        <div class="card-links">
+          <a href="#">⭐ GitHub</a>
+          <a href="#">🔗 Live Demo</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🌤️ Weather App</h3>
+        <p>Real-time weather app using OpenWeather API. Search any city and see temperature, humidity and wind speed.</p>
+        <div class="card-tags">
+          <span class="tag">JavaScript</span>
+          <span class="tag">API</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="card-links">
+          <a href="#">⭐ GitHub</a>
+          <a href="#">🔗 Live Demo</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section-label">Get In Touch</p>
+    <h2>Contact Me</h2>
+    <div class="contact-form">
+      <div>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Debasish Nayak" />
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="debasishn185@gmail.com" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+- [ ]         <textarea id="message" placeholder="Hello, I have a project idea..."></textarea>
+      </div>
+      <div id="form-msg"></div>
+      <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Made with ❤️ by <span>Rahul Sharma</span> · 2024
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
