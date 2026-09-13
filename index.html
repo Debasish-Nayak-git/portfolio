@@ -10,10 +10,12 @@
 
   <!-- NAVBAR -->
   <nav>
-    <div class="logo">RS.</div>
+    <div class="logo">DN.</div>
     <ul class="nav-links">
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#profiles">Profiles</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -22,17 +24,41 @@
   <section id="hero">
     <div class="hero-content">
       <h1>Hi, I'm <span>Debasish Nayak</span></h1>
-      <p class="role">Full Stack Developer, Devops · MERN Stack</p>
+      <p class="role">B.Tech CSE Student · Full-Stack Developer · AI/ML Explorer</p>
       <p class="desc">
-        I build clean web applications. Currently pursuing B.Tech CSE
-        and passionate about turning ideas into real products.Also i have ambision
-        on ai,ml and devops.
+        I build practical web applications and explore AI, machine learning,
+        and DevOps while turning ideas into real-world projects.
       </p>
       <div class="btn-group">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Contact Me</a>
       </div>
+      <div class="social-links" aria-label="Social profiles">
+        <a href="https://github.com/Debasish-Nayak-git" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/debasish507" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+   <p class="section-label">About Me</p>
+   <h2>Building, learning, and shipping</h2>
+   <div class="about-grid">
+     <div>
+       <p class="about-copy">
+         I am Debasish Nayak, a B.Tech Computer Science student from Bhubaneswar.
+         My public work includes full-stack web applications, Python development,
+         data structures in C, and hackathon-oriented problem solving.
+       </p>
+     </div>
+     <div class="stats-grid">
+       <div class="stat"><strong>6</strong><span>Public repositories</span></div>
+       <div class="stat"><strong>1</strong><span>GitHub following</span></div>
+       <div class="stat"><strong>2026</strong><span>Joined GitHub</span></div>
+       <div class="stat"><strong>0</strong><span>Public followers</span></div>
+     </div>
+   </div>
   </section>
 
   <!-- SKILLS -->
@@ -43,13 +69,14 @@
       <span class="skill-tag">HTML5</span>
       <span class="skill-tag">CSS3</span>
       <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">React.js</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">C++</span>
       <span class="skill-tag">Node.js</span>
       <span class="skill-tag">Express.js</span>
       <span class="skill-tag">MongoDB</span>
       <span class="skill-tag">Git & GitHub</span>
-      <span class="skill-tag">REST APIs</span>
-      <span class="skill-tag">Tailwind CSS</span>
+      <span class="skill-tag">Docker</span>
     </div>
   </section>
 
@@ -60,47 +87,95 @@
     <div class="projects-grid">
 
       <div class="card">
-        <h3>📚 Student Manager App</h3>
-        <p>CRUD app to manage student records. Add, edit, delete and search students with a React frontend and Express + MongoDB backend.</p>
+        <h3>🚨 Disaster Management Platform</h3>
+        <p>Full-stack platform for alerts, shelter and resource tracking, volunteer coordination, SOS signaling, AI assistance, risk prediction, IoT, and offline support.</p>
         <div class="card-tags">
-          <span class="tag">React</span>
-          <span class="tag">Express</span>
-          <span class="tag">MongoDB</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Python</span>
+          <span class="tag">Docker</span>
         </div>
         <div class="card-links">
-          <a href="#">⭐ GitHub</a>
-          <a href="#">🔗 Live Demo</a>
+          <a href="https://github.com/Debasish-Nayak-git/DISASTER-MANAGEMENT-PLATFORM2" target="_blank" rel="noopener">⭐ GitHub</a>
         </div>
       </div>
 
       <div class="card">
-        <h3>🛒 E-Commerce Site</h3>
-        <p>Responsive shopping website with product listing and cart functionality. Fully responsive with mobile support.</p>
+        <h3>🐍 Python Developer Internship</h3>
+        <p>Internship tasks and projects covering Python fundamentals, problem solving, file handling, web scraping, visualization, and automation.</p>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Web Scraping</span>
+          <span class="tag">Automation</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Debasish-Nayak-git/internship" target="_blank" rel="noopener">⭐ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🧩 Data Structures Using C</h3>
+        <p>A collection of college data-structure problem solutions implemented in C.</p>
+        <div class="card-tags">
+          <span class="tag">C</span>
+          <span class="tag">Data Structures</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Debasish-Nayak-git/Data-structure-using-c" target="_blank" rel="noopener">⭐ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🌐 Internet & Web Technology</h3>
+        <p>My first web technology repository, built while learning the fundamentals of web development.</p>
+        <div class="card-tags">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Debasish-Nayak-git/Internet-and-web-technology" target="_blank" rel="noopener">⭐ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>🐍 Python Programs</h3>
+        <p>Basic-to-medium Python programs created as part of college laboratory practice and learning.</p>
+        <div class="card-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Programming</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/Debasish-Nayak-git/Python-program" target="_blank" rel="noopener">⭐ GitHub</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>💼 Portfolio Website</h3>
+        <p>This personal portfolio website, created to present my skills, projects, and professional profiles.</p>
         <div class="card-tags">
           <span class="tag">HTML</span>
           <span class="tag">CSS</span>
           <span class="tag">JavaScript</span>
         </div>
         <div class="card-links">
-          <a href="#">⭐ GitHub</a>
-          <a href="#">🔗 Live Demo</a>
+          <a href="https://github.com/Debasish-Nayak-git/portfolio" target="_blank" rel="noopener">⭐ GitHub</a>
         </div>
       </div>
+    </div>
+  </section>
 
-      <div class="card">
-        <h3>🌤️ Weather App</h3>
-        <p>Real-time weather app using OpenWeather API. Search any city and see temperature, humidity and wind speed.</p>
-        <div class="card-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">API</span>
-          <span class="tag">CSS</span>
-        </div>
-        <div class="card-links">
-          <a href="#">⭐ GitHub</a>
-          <a href="#">🔗 Live Demo</a>
-        </div>
-      </div>
-
+  <!-- PROFILES -->
+  <section id="profiles">
+    <p class="section-label">Find Me Online</p>
+    <h2>Professional profiles</h2>
+    <div class="profile-links">
+      <a class="profile-link" href="https://github.com/Debasish-Nayak-git" target="_blank" rel="noopener">
+        <strong>GitHub</strong>
+        <span>@Debasish-Nayak-git · 6 public repositories</span>
+      </a>
+      <a class="profile-link" href="https://www.linkedin.com/in/debasish507" target="_blank" rel="noopener">
+        <strong>LinkedIn</strong>
+        <span>linkedin.com/in/debasish507</span>
+      </a>
     </div>
   </section>
 
@@ -119,7 +194,7 @@
       </div>
       <div>
         <label for="message">Message</label>
-- [ ]         <textarea id="message" placeholder="Hello, I have a project idea..."></textarea>
+        <textarea id="message" placeholder="Hello, I have a project idea..."></textarea>
       </div>
       <div id="form-msg"></div>
       <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
@@ -128,7 +203,7 @@
 
   <!-- FOOTER -->
   <footer>
-    Made with ❤️ by <span>Rahul Sharma</span> · 2024
+    Made with ❤️ by <span>Debasish Nayak</span> · 2026
   </footer>
 
   <script src="script.js"></script>

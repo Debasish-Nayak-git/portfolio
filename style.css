@@ -108,6 +108,22 @@ nav {
   margin-bottom: 28px;
 }
 
+.social-links {
+  display: flex;
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.social-links a {
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.social-links a:hover {
+  color: var(--accent);
+}
+
 /* ===========================
    BUTTONS
 =========================== */
@@ -165,6 +181,53 @@ h2 {
   font-size: 2rem;
   font-weight: 800;
   margin-bottom: 36px;
+}
+
+/* ===========================
+   ABOUT & PROFILE STATS
+=========================== */
+#about {
+  background-color: var(--white);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-copy {
+  color: var(--muted);
+  max-width: 520px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.stat {
+  padding: 18px;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.stat strong,
+.stat span {
+  display: block;
+}
+
+.stat strong {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.stat span {
+  color: var(--muted);
+  font-size: 0.78rem;
 }
 
 /* ===========================
@@ -247,6 +310,42 @@ h2 {
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--accent);
+}
+
+/* ===========================
+   PROFILES
+=========================== */
+#profiles {
+  background-color: var(--bg);
+}
+
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 20px;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.profile-link:hover {
+  border-color: var(--accent);
+}
+
+.profile-link strong {
+  color: var(--accent);
+}
+
+.profile-link span {
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 /* ===========================
@@ -450,9 +549,12 @@ footer span {
  
 
   .hero-content .desc {
-
     font-size: 0.9rem;
+  }
 
+  .about-grid,
+  .profile-links {
+    grid-template-columns: 1fr;
   }
 
  
