@@ -1,212 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Debasish Nayak | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Debasish Nayak, a B.Tech CSE student and full-stack developer from Bhubaneswar.">
+  <meta name="theme-color" content="#0b1220">
+  <title>Debasish Nayak | Full-stack developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Debasish Nayak home"><span>DN</span><i>.</i></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span><b class="sr-only">Open menu</b>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <!-- NAVBAR -->
-  <nav>
-    <div class="logo">DN.</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#profiles">Profiles</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- HERO -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Debasish Nayak</span></h1>
-      <p class="role">B.Tech CSE Student · Full-Stack Developer · AI/ML Explorer</p>
-      <p class="desc">
-        I build practical web applications and explore AI, machine learning,
-        and DevOps while turning ideas into real-world projects.
-      </p>
-      <div class="btn-group">
-        <a href="#projects" class="btn btn-primary">View Projects</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-      </div>
-      <div class="social-links" aria-label="Social profiles">
-        <a href="https://github.com/Debasish-Nayak-git" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://www.linkedin.com/in/debasish507" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about">
-   <p class="section-label">About Me</p>
-   <h2>Building, learning, and shipping</h2>
-   <div class="about-grid">
-     <div>
-       <p class="about-copy">
-         I am Debasish Nayak, a B.Tech Computer Science student from Bhubaneswar.
-         My public work includes full-stack web applications, Python development,
-         data structures in C, and hackathon-oriented problem solving.
-       </p>
-     </div>
-     <div class="stats-grid">
-       <div class="stat"><strong>6</strong><span>Public repositories</span></div>
-       <div class="stat"><strong>1</strong><span>GitHub following</span></div>
-       <div class="stat"><strong>2026</strong><span>Joined GitHub</span></div>
-       <div class="stat"><strong>0</strong><span>Public followers</span></div>
-     </div>
-   </div>
-  </section>
-
-  <!-- SKILLS -->
-  <section id="skills">
-    <p class="section-label">What I Know</p>
-    <h2>My Skills</h2>
-    <div class="skills-list">
-      <span class="skill-tag">HTML5</span>
-      <span class="skill-tag">CSS3</span>
-      <span class="skill-tag">JavaScript</span>
-      <span class="skill-tag">Python</span>
-      <span class="skill-tag">C</span>
-      <span class="skill-tag">C++</span>
-      <span class="skill-tag">Node.js</span>
-      <span class="skill-tag">Express.js</span>
-      <span class="skill-tag">MongoDB</span>
-      <span class="skill-tag">Git & GitHub</span>
-      <span class="skill-tag">Docker</span>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section id="projects">
-    <p class="section-label">My Work</p>
-    <h2>Projects</h2>
-    <div class="projects-grid">
-
-      <div class="card">
-        <h3>🚨 Disaster Management Platform</h3>
-        <p>Full-stack platform for alerts, shelter and resource tracking, volunteer coordination, SOS signaling, AI assistance, risk prediction, IoT, and offline support.</p>
-        <div class="card-tags">
-          <span class="tag">JavaScript</span>
-          <span class="tag">Python</span>
-          <span class="tag">Docker</span>
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Available for opportunities</p>
+        <h1>Building useful things for the <em>real world.</em></h1>
+        <p class="hero-intro">I’m Debasish Nayak, a B.Tech CSE student and full-stack developer from Bhubaneswar. I turn ideas into reliable web experiences while exploring AI, ML, and DevOps.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my work <span>↗</span></a>
+          <a class="text-link" href="mailto:debasishn185@gmail.com">Let’s talk <span>→</span></a>
         </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/DISASTER-MANAGEMENT-PLATFORM2" target="_blank" rel="noopener">⭐ GitHub</a>
+        <div class="social-row" aria-label="Social links">
+          <a href="https://github.com/Debasish-Nayak-git" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/debasish507" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="mailto:debasishn185@gmail.com">Email ↗</a>
         </div>
       </div>
+      <div class="hero-card" aria-label="Profile summary">
+        <div class="hero-card-top"><span>01 / 01</span><span>Profile</span></div>
+        <div class="avatar">DN</div>
+        <p class="hero-card-title">Curious mind.<br><strong>Practical builder.</strong></p>
+        <div class="hero-card-meta"><span>Based in</span><strong>Bhubaneswar, India</strong></div>
+        <div class="hero-card-meta"><span>Focus</span><strong>Web · AI/ML · DevOps</strong></div>
+      </div>
+    </section>
 
-      <div class="card">
-        <h3>🐍 Python Developer Internship</h3>
-        <p>Internship tasks and projects covering Python fundamentals, problem solving, file handling, web scraping, visualization, and automation.</p>
-        <div class="card-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Web Scraping</span>
-          <span class="tag">Automation</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/internship" target="_blank" rel="noopener">⭐ GitHub</a>
+    <section class="marquee" aria-label="Areas of interest">
+      <div class="marquee-track"><span>FULL-STACK DEVELOPMENT</span><b>✳</b><span>ARTIFICIAL INTELLIGENCE</span><b>✳</b><span>PROBLEM SOLVING</span><b>✳</b><span>FULL-STACK DEVELOPMENT</span><b>✳</b></div>
+    </section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><p class="eyebrow">01 — About</p><h2>A developer who likes to learn by building.</h2></div>
+      <div class="about-layout">
+        <p class="large-copy">My work spans full-stack web applications, Python development, C data structures, and hackathon projects. I care about clear interfaces, useful features, and learning the fundamentals behind the tools I use.</p>
+        <div class="stats">
+          <div><strong>06</strong><span>Public repositories</span></div>
+          <div><strong>03</strong><span>Core languages</span></div>
+          <div><strong>01</strong><span>Team platform</span></div>
+          <div><strong>∞</strong><span>Things to learn</span></div>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>🧩 Data Structures Using C</h3>
-        <p>A collection of college data-structure problem solutions implemented in C.</p>
-        <div class="card-tags">
-          <span class="tag">C</span>
-          <span class="tag">Data Structures</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/Data-structure-using-c" target="_blank" rel="noopener">⭐ GitHub</a>
-        </div>
-      </div>
-
-      <div class="card">
-        <h3>🌐 Internet & Web Technology</h3>
-        <p>My first web technology repository, built while learning the fundamentals of web development.</p>
-        <div class="card-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/Internet-and-web-technology" target="_blank" rel="noopener">⭐ GitHub</a>
+    <section class="section work-section" id="work">
+      <div class="container">
+        <div class="section-heading heading-row"><div><p class="eyebrow">02 — Selected work</p><h2>Projects with a purpose.</h2></div><a class="text-link desktop-link" href="https://github.com/Debasish-Nayak-git?tab=repositories" target="_blank" rel="noopener noreferrer">View all repositories ↗</a></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-number">01</div><div class="project-content"><p class="project-type">Team project · Full-stack</p><h3>Disaster Management Platform</h3><p>A full-stack platform for real-time alerts, shelter and resource tracking, volunteer coordination, SOS signaling, AI assistance, risk prediction, IoT, and offline support.</p><div class="tags"><span>JavaScript</span><span>Python</span><span>Docker</span></div><a class="project-link" href="https://github.com/Debasish-Nayak-git/DISASTER-MANAGEMENT-PLATFORM2" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div></article>
+          <article class="project-card"><div class="project-number">02</div><div class="project-content"><p class="project-type">Internship · Python</p><h3>Python Developer Internship</h3><p>Practical tasks covering fundamentals, file handling, web scraping, data visualization, and automation.</p><div class="tags"><span>Python</span><span>Automation</span></div><a class="project-link" href="https://github.com/Debasish-Nayak-git/internship" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div></article>
+          <article class="project-card"><div class="project-number">03</div><div class="project-content"><p class="project-type">Academic work · C</p><h3>Data Structures Using C</h3><p>College data-structure problem solutions written in C, built to strengthen algorithmic thinking.</p><div class="tags"><span>C</span><span>Algorithms</span></div><a class="project-link" href="https://github.com/Debasish-Nayak-git/Data-structure-using-c" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div></article>
+          <article class="project-card"><div class="project-number">04</div><div class="project-content"><p class="project-type">Personal · Frontend</p><h3>This portfolio</h3><p>A responsive, accessible portfolio built with semantic HTML, modern CSS, and lightweight JavaScript.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/Debasish-Nayak-git/portfolio" target="_blank" rel="noopener noreferrer">View on GitHub <span>↗</span></a></div></article>
         </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>🐍 Python Programs</h3>
-        <p>Basic-to-medium Python programs created as part of college laboratory practice and learning.</p>
-        <div class="card-tags">
-          <span class="tag">Python</span>
-          <span class="tag">Programming</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/Python-program" target="_blank" rel="noopener">⭐ GitHub</a>
-        </div>
+    <section class="section container" id="skills">
+      <div class="section-heading"><p class="eyebrow">03 — Toolkit</p><h2>Tools I use to make ideas real.</h2></div>
+      <div class="skills-layout"><p class="large-copy">I’m growing across the stack, from semantic frontend foundations to backend systems and problem solving.</p><div class="skills-list"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>C / C++</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>Git & GitHub</span><span>Docker</span></div></div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="container contact-layout">
+        <div><p class="eyebrow">04 — Contact</p><h2>Have an idea?<br><em>Let’s make it happen.</em></h2><p class="contact-note">The fastest way to reach me is by email. You can also find me on GitHub and LinkedIn.</p><div class="contact-details"><a href="mailto:debasishn185@gmail.com">debasishn185@gmail.com</a><span>Bhubaneswar, India</span></div></div>
+        <form class="contact-form" id="contact-form">
+          <label for="name">Your name<input id="name" name="name" type="text" autocomplete="name" required placeholder="Your name"></label>
+          <label for="email">Your email<input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"></label>
+          <label for="message">Your message<textarea id="message" name="message" rows="4" required placeholder="Tell me a little about your idea..."></textarea></label>
+          <button class="button button-light" type="submit">Open email draft <span>↗</span></button>
+          <p class="form-message" id="form-message" role="status"></p>
+        </form>
       </div>
+    </section>
+  </main>
 
-      <div class="card">
-        <h3>💼 Portfolio Website</h3>
-        <p>This personal portfolio website, created to present my skills, projects, and professional profiles.</p>
-        <div class="card-tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">JavaScript</span>
-        </div>
-        <div class="card-links">
-          <a href="https://github.com/Debasish-Nayak-git/portfolio" target="_blank" rel="noopener">⭐ GitHub</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROFILES -->
-  <section id="profiles">
-    <p class="section-label">Find Me Online</p>
-    <h2>Professional profiles</h2>
-    <div class="profile-links">
-      <a class="profile-link" href="https://github.com/Debasish-Nayak-git" target="_blank" rel="noopener">
-        <strong>GitHub</strong>
-        <span>@Debasish-Nayak-git · 6 public repositories</span>
-      </a>
-      <a class="profile-link" href="https://www.linkedin.com/in/debasish507" target="_blank" rel="noopener">
-        <strong>LinkedIn</strong>
-        <span>linkedin.com/in/debasish507</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <p class="section-label">Get In Touch</p>
-    <h2>Contact Me</h2>
-    <div class="contact-form">
-      <div>
-        <label for="name">Your Name</label>
-        <input type="text" id="name" placeholder="Debasish Nayak" />
-      </div>
-      <div>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="debasishn185@gmail.com" />
-      </div>
-      <div>
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="Hello, I have a project idea..."></textarea>
-      </div>
-      <div id="form-msg"></div>
-      <button class="btn btn-primary" onclick="sendMessage()">Send Message</button>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    Made with ❤️ by <span>Debasish Nayak</span> · 2026
-  </footer>
-
+  <footer class="footer container"><span>© 2026 Debasish Nayak</span><span>Designed & built with intention.</span><a href="#top">Back to top ↑</a></footer>
   <script src="script.js"></script>
-
 </body>
 </html>

@@ -1,42 +1,36 @@
-// ===========================
-// CONTACT FORM VALIDATION
-// ===========================
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("#nav-links");
 
-function sendMessage() {
+menuToggle.addEventListener("click", () => {
+  const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+  menuToggle.setAttribute("aria-expanded", String(!isOpen));
+  navLinks.classList.toggle("is-open", !isOpen);
+});
 
-  // Step 1: Get values from input fields
-  var name    = document.getElementById("name").value;
-  var email   = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+navLinks.querySelectorAll("a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuToggle.setAttribute("aria-expanded", "false");
+    navLinks.classList.remove("is-open");
+  });
+});
 
-  // Step 2: Get the message box element
-  var msg = document.getElementById("form-msg");
+document.querySelector("#contact-form").addEventListener("submit", (event) => {
+  event.preventDefault();
+  const form = event.currentTarget;
+  const name = form.elements.name.value.trim();
+  const email = form.elements.email.value.trim();
+  const message = form.elements.message.value.trim();
+  const status = document.querySelector("#form-message");
 
-  // Step 3: Reset previous message
-  msg.className = "";
-  msg.style.display = "none";
-
-  // Step 4: Check if any field is empty
-  if (name === "" || email === "" || message === "") {
-    msg.textContent = "Please fill in all fields.";
-    msg.className = "error";
+  if (!name || !email || !message) {
+    status.textContent = "Please complete all fields.";
+    status.className = "form-message is-error";
     return;
   }
 
-  // Step 5: Basic email check (must have @ symbol)
-  if (email.indexOf("@") === -1) {
-    msg.textContent = "Please enter a valid email address.";
-    msg.className = "error";
-    return;
-  }
-
-  // Step 6: All good — show success message
-  msg.textContent = "Message sent! I will get back to you soon.";
-  msg.className = "success";
-
-  // Step 7: Clear the form
-  document.getElementById("name").value    = "";
-  document.getElementById("email").value   = "";
-  document.getElementById("message").value = "";
-
-}
+  const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+  window.location.href = `mailto:debasishn185@gmail.com?subject=${subject}&body=${body}`;
+  status.textContent = "Your email app should open with a prepared draft.";
+  status.className = "form-message is-success";
+});
