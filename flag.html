@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian National Flag — Tiranga</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #f1f5f9;
+    }
+
+    /* Standard 3:2 Ratio Indian Flag */
+    .flag {
+      width: 450px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      border: 1px solid #e2e8f0;
+    }
+
+    /* Top Band - Saffron */
+    .saffron {
+      flex: 1;
+      background-color: #FF9933;
+    }
+
+    /* Middle Band - White */
+    .white {
+      flex: 1;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    /* Bottom Band - Green */
+    .green {
+      flex: 1;
+      background-color: #0f9203;
+    }
+
+    /* Ashoka Chakra (Navy Blue, 24 Spokes) */
+    .ashoka-chakra {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- The Flag -->
+  <div class="flag">
+    <div class="saffron"></div>
+    <div class="white">
+      <svg class="ashoka-chakra" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Outer Circle Rim -->
+        <circle cx="50" cy="50" r="46" fill="none" stroke="#000080" stroke-width="4" />
+        
+        <!-- Center Hub -->
+        <circle cx="50" cy="50" r="8" fill="#000080" />
+        <circle cx="50" cy="50" r="3" fill="#FFFFFF" />
+
+        <!-- 24 Spokes (15 degrees apart) -->
+        <g stroke="#000080" stroke-width="1.8">
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(0 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(15 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(30 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(45 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(60 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(75 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(90 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(105 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(120 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(135 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(150 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(165 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(180 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(195 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(210 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(225 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(240 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(255 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(270 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(285 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(300 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(315 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(330 50 50)" />
+          <line x1="50" y1="50" x2="50" y2="4" transform="rotate(345 50 50)" />
+        </g>
+      </svg>
+    </div>
+    <div class="green"></div>
+  </div>
+
+</body>
+</html>
